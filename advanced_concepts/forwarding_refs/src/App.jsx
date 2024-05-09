@@ -7,7 +7,7 @@ Use Case:
   If you have a parent component and you a breaking it apart into custom components. If one component needs a reference
   passed from the parent, this is how you do that.
 General Pattern: 
-  Take ref a prop to component, pass to jsx parent ref prop. Then wrap exported component in forwardRef
+  Take ref as prop to component, pass to jsx parent ref prop. Then wrap exported component in forwardRef
 Overview:
   import forwardRef from react, create ref in parent and pass it as prop to custom component. In custom component accept
   all other props, then ref. Export custom component wrapped in forwardRef function that take the component. 
